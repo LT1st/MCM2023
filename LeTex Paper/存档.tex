@@ -1,0 +1,19 @@
+3.3.1 Overall framework of MOEA/D
+3.3.1.1 Set priorities
+Using the network and specific SDGs to prioritize actions can enhance UN work successfully. Considering the assessment of the effectiveness of each priority and determining ten-year deliverables, the difficulty of finding priorities is translated into a sequential problem of traversing the
+network structure.
+
+
+Figure \ref{} 9 shows the priorities that will most effectively drive the work of the UN forward. The final solution of the multi-objective optimization model is the development priority order of the SDGs. We not only find the optimal priorities but also evaluate the priorities of each SDGs.
+
+3.3.1.2 Confidence level
+After conducting a normality test, it was found that most of the sustainable development goals do not follow a normal distribution. The confidence level of the model results depends on the confidence level of the linkage matrix and how well the model fits the existing data. Therefore, we conducted two tests to make the data more reliable.
+
+Due to the fact that genetic algorithms are not probabilistic correlation models, the inference conclusions that genetic algorithms provide for a set of data are always deterministic. It is necessary to begin with the correlation of the nodes in order to achieve an accurate representation of the model. As the binary adjacency matrix that is used by the method is created by sampling the correlation matrix, the level of confidence that can be placed in the algorithm may be described in terms of the level of confidence that can be placed in the connection weights. 
+
+Figure 8: Probability map of edges
+
+
+We used time series data on the specific benefits and progress of each sustainable development goal as a basis. Then, we used linear regression to simulate the relationship between the progress of each sustainable development goal and its specific benefits, while controlling for any relevant factors. Finally, we compared the regression analysis results of each sustainable development goal. We used this information to calculate the target score for each sustainable development goal and to derive the final score for the overall effectiveness of the United Nations’ work. In the test, we found that the multi-objective optimization model achieved higher predictive accuracy than the linear regression model. While linear regression models can achieve good results on simple problems, multi-objective optimization models have advantages over linear regression models in handling multi-objective and complex problems. The MOEA/D algorithm adopts a dynamic weight allocation mechanism, which can dynamically adjust the weight of sub-problems to better adapt to different problems. In addition, the MOEA/D algorithm also employs a local search operator, which can improve the convergence of the algorithm without destroying the diversity of the population. Compared to the linear regression model, the results obtained by the MOEA/D algorithm are more robust and can handle a variety of complex multi-objective optimization problems, including those with non-convex, discontinuous, and multi-modal characteristics.
+
+\subsubsubsection{Reasonable to achieve in }
